@@ -1,0 +1,22 @@
+{
+  "name": "假面愚者",
+  "icon": "masquerader_mod:invitation",
+  "category": "patchouli:adventure",
+  "sortnum": 4,
+  "pages": [
+	{
+		"type": "entity",
+		"entity": "masquerader_mod:masquerader",
+		"scale": 0.75,
+		"offset": 0.0,
+		"rotate": true,
+		"default_rotation": -45,
+		"name": "假面愚者",
+		"text": "假面舞会的焦点"
+	},
+	{
+	  "type": "text",
+	  "text": "#在主世界某处，一场虚伪的狂欢舞会正在悄然进行。"
+	}
+  ]
+}

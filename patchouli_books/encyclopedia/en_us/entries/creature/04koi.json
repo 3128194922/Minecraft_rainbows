@@ -1,0 +1,22 @@
+{
+  "name": "锦鲤",
+  "icon": "environmental:koi",
+  "category": "patchouli:creature",
+  "sortnum": 4,
+  "pages": [
+	{
+		"type": "entity",
+		"entity": "environmental:koi",
+		"scale": 1.0,
+		"offset": -0.5,
+		"rotate": true,
+		"default_rotation": -45,
+		"name": "锦鲤",
+		"text": "归于宁静"
+	},
+	{
+	  "type": "text",
+	  "text": "#锦鲤会自然生成在樱桃树林一类的生物群系水体中。，玩家处于其周围32格内时会获得$(5)宁静$(0)效果。该效果会阻止在玩家周围生成敌对生物。"
+	}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "机械动力",
+  "icon": "create:brass_hand",
+  "category": "patchouli:main",
+  "sortnum": 3,
+  "pages": [
+	{
+	  "type": "text",
+	  "text": "#服务器内存在机械动力mod，机械动力是一个充满艺术与优雅的自动化模组，你可以使用该模组内提供的物品构建可量产万物的流水线。"
+	}
+  ]
+}

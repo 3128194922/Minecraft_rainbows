@@ -1,0 +1,32 @@
+{
+  "name": "我的地精朋友(未完成)",
+  "icon": "minecraft:apple",
+  "category": "patchouli:creature",
+  "sortnum": 3,
+  "pages": [
+	{
+		"type": "entity",
+		"entity": "goblintraders:goblin_trader",
+		"scale": 1.0,
+		"offset": 0.0,
+		"rotate": true,
+		"default_rotation": -45,
+		"name": "哥布林商人",
+		"text": "绿皮小子"
+	},
+	{
+		"type": "entity",
+		"entity": "goblintraders:vein_goblin_trader",
+		"scale": 1.0,
+		"offset": 0.0,
+		"rotate": true,
+		"default_rotation": -45,
+		"name": "矿脉哥布林商人",
+		"text": "红温了🤬"
+	},
+	{
+	  "type": "text",
+	  "text": "#友善的小家伙，喜好苹果。$(br)#在主世界和下界偶有出没，虽然比旅行商人的交易更$(6)物美价廉$(0)些，但他们并不嗜$(3)绿宝石$(0)如命。因此交易时要备好各种杂货。"
+	}
+  ]
+}

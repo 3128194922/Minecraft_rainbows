@@ -1,0 +1,12 @@
+{
+  "name": "下界概况",
+  "icon": "netherexp:shotgun_core",
+  "category": "patchouli:main",
+  "sortnum": 8,
+  "pages": [
+	{
+	  "type": "text",
+	  "text": "归功于炽海更新，Jaden的下界拓展等mod，下界的生态焕然一新，探索更丰富的生态系统，寻找圣所，完成被叛事件并吃遍下界，不失为休闲一趣。"
+	}
+  ]
+}

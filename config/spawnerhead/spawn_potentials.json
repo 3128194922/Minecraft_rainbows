@@ -1,0 +1,54 @@
+[
+  {
+    "entityID": "minecraft:zombie",
+    "weight": 50
+  },
+  {
+    "entityID": "minecraft:spider",
+    "weight": 50
+  },
+  {
+    "entityID": "minecraft:skeleton",
+    "weight": 50
+  },
+  {
+    "entityID": "minecraft:husk",
+    "weight": 40
+  },
+  {
+    "entityID": "alexsmobs:murmur",
+    "weight": 50
+  },
+  {
+    "entityID": "alexsmobs:centipede_head",
+    "weight": 25
+  },
+  {
+    "entityID": "alexsmobs:rocky_roller",
+    "weight": 50
+  },
+  {
+    "entityID": "alexsmobs:guster",
+    "weight": 50
+  },
+  {
+    "entityID": "alexsmobs:crimson_mosquito",
+    "weight": 10
+  },
+  {
+    "entityID": "dungeonnowloading:hollow",
+    "weight": 25
+  },
+  {
+    "entityID": "touhou_little_maid:fairy",
+    "weight": 40
+  },
+  {
+    "entityID": "netherexp:apparition",
+    "weight": 40
+  },
+  {
+    "entityID": "minecraft:stray",
+    "weight": 50
+  }
+]

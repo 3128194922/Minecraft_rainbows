@@ -1,0 +1,16 @@
+{
+  "name": "车万女仆",
+  "icon": "touhou_little_maid:power_point",
+  "category": "patchouli:main",
+  "sortnum": 5,
+  "pages": [
+	{
+	  "type": "text",
+	  "text": "车万女仆属于服务器养老mod的核心之一，其内有许多机制可为玩家提供优质游戏体验。$(br)详情可以查阅$(6)《记忆中的幻想乡》$(0)一书。"
+	},
+    {
+	"type": "crafting",
+        "recipe": "touhou_little_maid:memorizable_gensokyo"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "思索",
+  "icon": "create:experience_nugget",
+  "category": "patchouli:main",
+  "sortnum": 4,
+  "pages": [
+	{
+	  "type": "text",
+	  "text": "俺寻思能行.jpg   $(br)对机械动力的特定物品按住W键可以进行思索，这是机械动力内置的教程和指引系统，如若仍有疑问，可以去哔哩哔哩进行机械动力大学习，学成归来后你也是大机霸，"
+	},
+	{
+	  "type": "patchouli:link",
+	  "url": "https://www.bilibili.com/video/BV1964y1K7mv/?spm_id_from=333.337.search-card.all.click&vd_source=a707c72cffdff565dbfd9b5ce7bc99db",
+	  "link_text": "B站教程链接"
+	}
+  ]
+}

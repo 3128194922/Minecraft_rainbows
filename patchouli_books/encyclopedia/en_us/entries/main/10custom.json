@@ -1,0 +1,25 @@
+{
+  "name": "可上传的图片与网络音乐",
+  "icon": "immersive_paintings:painting",
+  "category": "patchouli:main",
+  "sortnum": 10,
+  "pages": [
+	{
+	  "type": "patchouli:spotlight",
+	  "item": "immersive_paintings:painting"
+	},
+	{
+	  "type": "text",
+	  "text": "可以使用该物品向服务器上传并展示你的本地图片。"
+	},
+	{
+	  "type": "patchouli:spotlight",
+	  "title": "网络音乐三件套",
+	  "item": "netmusic:cd_burner,netmusic:computer,netmusic:music_player"
+	},	
+{
+	  "type": "text",
+	  "text": "网抑云，启动！$(br)但还请高抬贵手不要下载超长时间的音乐。"
+	}
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "生灵",
+  "description": "概述服务器内的一些生物",
+  "sortnum": 3,
+  "icon": "minecraft:axolotl_bucket"
+}

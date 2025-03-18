@@ -1,0 +1,22 @@
+{
+  "name": "Muscle♫Muscle♫Man♫",
+  "icon": "alexsmobs:hemolymph_sac",
+  "category": "patchouli:adventure",
+  "sortnum": 7,
+  "pages": [
+	{
+		"type": "entity",
+		"entity": "alexsmobs:warped_mosco",
+		"scale": 0.75,
+		"offset": 0.0,
+		"rotate": true,
+		"default_rotation": -45,
+		"name": "诡异蚊鬼",
+		"text": "爆肌蚊？！"
+	},
+	{
+	  "type": "text",
+	  "text": "#具体怎么召唤去看动物图鉴。"
+	}
+  ]
+}

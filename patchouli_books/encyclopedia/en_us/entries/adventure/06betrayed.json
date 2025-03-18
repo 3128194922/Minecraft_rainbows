@@ -1,0 +1,57 @@
+{
+  "name": "被叛",
+  "icon": "netherexp:treacherous_candle",
+  "category": "patchouli:adventure",
+  "sortnum": 6,
+  "pages": [
+	{
+	  "type": "text",
+	  "text": "#使用打火石点燃狡诈蜡烛，开启$(5)被叛$(0)挑战$(br)#玩家必须保护狡诈蜡烛不被这些怪物破坏，并击杀所有被召唤的怪物，即算玩家挑战成功。$(br)#越高层的狡诈蜡烛$(5)难度$(0)越高。$(br)#若失败，则需手持$(6)蜜脾$(0)右键修好损坏的狡诈蜡烛，才能再次挑战。$(br)#$(5)狡诈烛焰$(5)可用于开启$(2)火盆匣$(0)或在$(2)幽匿研磨体$(0)兑换经验。"
+	},
+	{
+		"type": "entity",
+		"entity": "minecraft:skeleton",
+		"scale": 1.0,
+		"offset": 0.0,
+		"rotate": true,
+		"default_rotation": -45,
+		"text": "bro似乎走错片场了"
+	},
+	{
+		"type": "entity",
+		"entity": "netherexp:apparition",
+		"scale": 0.75,
+		"offset": 0.0,
+		"rotate": true,
+		"default_rotation": -45,
+		"text": "会夺舍部分生物，同时免疫常规抛射体攻击。"
+	},
+	{
+		"type": "entity",
+		"entity": "netherexp:banshee",
+		"scale": 0.75,
+		"offset": 0.0,
+		"rotate": true,
+		"default_rotation": -45,
+		"text": "烈焰人被夺舍的产物，发射飞行速度缓慢、弱跟踪的鬼火团"
+	},
+	{
+		"type": "entity",
+		"entity": "netherexp:vessel",
+		"scale": 0.75,
+		"offset": 0.0,
+		"rotate": true,
+		"default_rotation": -45,
+		"text": "骷髅被夺舍的产物，迸射灵魂霰弹造成大量伤害"
+	},
+	{
+		"type": "entity",
+		"entity": "netherexp:ecto_slab",
+		"scale": 1.0,
+		"offset": 0.0,
+		"rotate": true,
+		"default_rotation": -45,
+		"text": "岩浆怪被夺舍的产物，会穿地突袭玩家"
+	}
+  ]
+}

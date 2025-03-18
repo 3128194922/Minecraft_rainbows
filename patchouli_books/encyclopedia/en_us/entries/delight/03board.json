@@ -1,0 +1,16 @@
+{
+  "name": "厨锅",
+  "icon": "farmersdelight:cutting_board",
+  "category": "patchouli:delight",
+  "sortnum": 2,
+  "pages": [
+	{
+	  "type": "patchouli:spotlight",
+	  "item": "farmersdelight:cutting_board"
+	},
+	{
+	  "type": "text",
+	  "text": "农夫乐事的另一个主要工作台，使用$(5)斧子$(0)与$(5)厨刀$(0)交互以进行特殊制作。"
+	}
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "泡泡虫",
+  "icon": "endergetic:puffbug_bottle",
+  "category": "patchouli:creature",
+  "sortnum": 7,
+  "pages": [
+	{
+		"type": "entity",
+		"entity": "endergetic:puff_bug",
+		"scale": 1.0,
+		"offset": 0.0,
+		"rotate": true,
+		"default_rotation": -45,
+		"text": "末地的小蜜蜂"
+	},
+	{
+	  "type": "patchouli:link",
+	  "url": "https://www.mcmod.cn/item/273824.html",
+	  "link_text": "点我以了解泡泡虫"	
+	}
+  ]
+}

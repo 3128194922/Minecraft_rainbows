@@ -1,0 +1,12 @@
+{
+  "name": "生物搬运",
+  "icon": "minecraft:lead",
+  "category": "patchouli:tweak",
+  "sortnum": 11,
+  "pages": [
+	{
+	  "type": "text",
+	  "text": "#现在栓绳可以栓住$(2)任何生物$(0)。$(br)#在拴住生物的情况下，通过$(5)指路石$(0)可以让被栓实体与玩家一同传送。"
+	}
+  ]
+}

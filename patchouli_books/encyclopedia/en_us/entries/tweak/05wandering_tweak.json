@@ -1,0 +1,22 @@
+{
+  "name": "流浪商人调整（还没做）",
+  "icon": "minecraft:wandering_trader_spawn_egg",
+  "category": "patchouli:tweak",
+  "sortnum": 5,
+  "pages": [
+	{
+		"type": "entity",
+		"entity": "minecraft:wandering_trader",
+		"scale": 1.0,
+		"offset": 0.0,
+		"rotate": true,
+		"default_rotation": -45,
+		"name": "流浪商人调整（未完成）",
+		"text": "流浪拴绳和他的两张皮革~"
+	},
+	{
+	  "type": "text",
+	  "text": "#现如今流浪商人的交易内容变得十分有用。虽然流浪商人的到来往往意味着财富，但有时偶尔会有$(6)惊喜$(0)发生。"
+	}
+  ]
+}

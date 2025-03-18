@@ -1,0 +1,17 @@
+{
+  "name": "虚空蠕虫",
+  "icon": "alexsmobs:mysterious_worm",
+  "category": "patchouli:adventure",
+  "sortnum": 9,
+  "pages": [
+	{
+		"type": "entity",
+		"entity": "alexsmobs:void_worm",
+		"scale": 0.5,
+		"offset": 0.0,
+		"rotate": true,
+		"default_rotation": -45,
+		"text": "详情去看动物图鉴"
+	}
+  ]
+}

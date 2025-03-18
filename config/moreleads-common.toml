@@ -1,0 +1,13 @@
+#allow villager
+VILLAGERS_ENABLED = true
+#all hostiles
+HOSTILES_ENABLED = true
+#allow water creatures
+WATER_CREATURES_ENABLED = true
+#allow turtles
+TURTLES_ENABLED = true
+#allow ambients
+AMBIENTS_ENABLED = true
+#allow pandas
+PANDAS_ENABLED = true
+

@@ -1,0 +1,17 @@
+{
+  "name": "夸克",
+  "icon": "quark:slime_in_a_bucket",
+  "category": "patchouli:tweak",
+  "sortnum": 3,
+  "pages": [
+	{
+	  "type": "patchouli:link",
+	  "url": "https://www.mcmod.cn/class/527.html",
+	  "link_text": "点击此以了解详情"
+	},
+	{
+	  "type": "text",
+	  "text": "赞美$(6)Vazkii$(0)。$(br)由于夸克修改内容过多，请移步隔壁中文mod百科网站查看。"
+	}
+  ]
+}

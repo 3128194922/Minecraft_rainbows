@@ -1,0 +1,33 @@
+{
+  "name": "服务器传送机制",
+  "icon": "waystones:waystone",
+  "category": "patchouli:main",
+  "sortnum": 6,
+  "pages": [
+	{
+	  "type": "patchouli:spotlight",
+	  "item": "waystones:waystone"
+	},
+	{
+	  "type": "text",
+	  "text": "#传送石碑可以通过制作或挖掘野生石碑的方式获取。右键可以激活作为一个传送点。对着石碑右键可以选择已激活的传送石碑进行远程传送。$(br)#对于玩家之间的传送，可以输入$(6) /tpa $(0)（玩家游戏名字）来进行传送。（在/tpa 后按Tab键可以快捷补全玩家名）"
+	},
+	{
+	  "type": "patchouli:spotlight",
+	  "item": "waystones:return_scroll,waystones:bound_scroll,waystones:warp_scroll",
+	  "title": "三种卷轴"
+	},
+	{
+ "type": "text",
+	  "text": "#共有三种不同的卷轴，$(6)回程卷轴$(0)可以快速返回上一次使用的石碑处。$(br)#$(6)绑定卷轴$(0)可以快速返回其绑定的石碑处。$(br)#而$(6)传送卷轴$(0)最为常用，可以传送到任意已激活的石碑处。"
+	},
+	{
+	  "type": "patchouli:spotlight",
+	  "item": "waystones:warp_stone"
+	},
+	{
+	  "type": "text",
+	  "text": "	#右键可以无消耗传送到任意已激活的石碑处。是$(6)最为方便的旅行道具$(0)。"
+	}
+  ]
+}

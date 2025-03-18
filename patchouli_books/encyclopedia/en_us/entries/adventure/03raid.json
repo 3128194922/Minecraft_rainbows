@@ -1,0 +1,72 @@
+{
+  "name": "袭击",
+  "icon": "savage_and_ravage:mask_of_dishonesty",
+  "category": "patchouli:adventure",
+  "sortnum": 2,
+  "pages": [
+	{
+	  "type": "text",
+	  "text": "袭击已被强化。$(br)该章节之后的书页是对袭击中新灾厄村民的简略介绍。"
+	},
+	{
+		"type": "entity",
+		"entity": "enchantwithmob:enchanter",
+		"scale": 0.75,
+		"offset": 0.0,
+		"rotate": true,
+		"default_rotation": -45,
+		"name": "附魔师",
+		"text": "会为敌对生物附上附魔，将其击杀后解除"
+	},
+	{
+		"type": "entity",
+		"entity": "savage_and_ravage:executioner",
+		"scale": 0.75,
+		"offset": 0.0,
+		"rotate": true,
+		"default_rotation": -45,
+		"name": "刽子手",
+		"text": "被他杀死的玩家会掉落头颅"
+	},
+	{
+		"type": "entity",
+		"entity": "savage_and_ravage:iceologer",
+		"scale": 0.75,
+		"offset": 0.0,
+		"rotate": true,
+		"default_rotation": -45,
+		"name": "冰术士",
+		"text": "孩子们，我打赢复活赛了"
+	},
+	{
+		"type": "entity",
+		"entity": "savage_and_ravage:griefer",
+		"scale": 0.75,
+		"offset": 0.0,
+		"rotate": true,
+		"default_rotation": -45,
+		"name": "破坏者",
+		"text": "还得是传奇耐炸王"
+	},
+	{
+		"type": "entity",
+		"entity": "savage_and_ravage:creepie",
+		"scale": 0.8,
+		"offset": 0.0,
+		"rotate": true,
+		"default_rotation": -45,
+		"name": "小苦力怕",
+		"text": "可爱捏~"
+	},
+	{
+		"type": "entity",
+		"entity": "savage_and_ravage:trickster",
+		"scale": 1.0,
+		"offset": 0.0,
+		"rotate": true,
+		"default_rotation": -45,
+		"name": "诡术师",
+		"text": "这玩意发出来的声音很想让你真人快打他一顿"
+	}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "套装奖励（未完成）",
+  "icon": "minecraft:iron_chestplate",
+  "category": "patchouli:tweak",
+  "sortnum": 8,
+  "pages": [
+	{
+	  "type": "text",
+	  "text": "#为服务器各种套装添加了套装奖励！$(br)#另外$(5)饰品栏$(0)内的饰品也能被视作套装所需一部分。"
+	}
+  ]
+}

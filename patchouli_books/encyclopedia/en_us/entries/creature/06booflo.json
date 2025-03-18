@@ -1,0 +1,22 @@
+{
+  "name": "浮跃牛蛙",
+  "icon": "endergetic:booflo_vest",
+  "category": "patchouli:creature",
+  "sortnum": 6,
+  "pages": [
+	{
+		"type": "entity",
+		"entity": "endergetic:booflo",
+		"scale": 0.5,
+		"offset": 0.0,
+		"rotate": true,
+		"default_rotation": -45,
+		"text": "其半成体长大也会掉落浮跃牛蛙皮"
+	},
+	{
+	  "type": "patchouli:link",
+	  "url": "https://www.mcmod.cn/item/273830.html",
+	  "link_text": "点我以了解浮跃牛蛙"	
+	}
+  ]
+}

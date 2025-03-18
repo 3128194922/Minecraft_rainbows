@@ -1,0 +1,16 @@
+{
+  "name": "钓鱼修改（未完成）",
+  "icon": "minecraft:fishing_rod",
+  "category": "patchouli:tweak",
+  "sortnum": 4,
+  "pages": [
+	{
+	  "type": "patchouli:spotlight",
+	  "item": "netherdepthsupgrade:lava_fishing_rod"
+	},
+	{
+	  "type": "text",
+	  "text": "#服务器内钓鱼不再会钓出物品鱼，而是各种实体鱼，甚至你可以从水里钓出溺尸！$(br)#另外现可以于$(6)岩浆$(0)中钓鱼，只是需要左侧的特殊钓竿。"
+	}
+  ]
+}

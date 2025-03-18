@@ -1,0 +1,18 @@
+{
+  "name": "厨刀",
+  "icon": "farmersdelight:netherite_knife",
+  "category": "patchouli:delight",
+  "sortnum": 1,
+  "pages": [
+	{
+	  "type": "patchouli:spotlight",
+   "item": {
+    "tag": "farmersdelight:tools/knives"
+  }
+	},
+	{
+	  "type": "text",
+	  "text": "使用厨刀击杀生物会有$(6)额外掉落$(0)。$(br)#附有$(5)背刺$(0)附魔的厨刀也可以作为武器在团战时使用，输出效率不低。"
+	}
+  ]
+}

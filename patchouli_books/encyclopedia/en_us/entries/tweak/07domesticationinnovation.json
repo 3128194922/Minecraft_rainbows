@@ -1,0 +1,17 @@
+{
+  "name": "驯养革新",
+  "icon": "domesticationinnovation:collar_tag",
+  "category": "patchouli:tweak",
+  "sortnum": 7,
+  "pages": [
+	{
+	  "type": "patchouli:link",
+	  "url": "https://www.mcmod.cn/class/5827.html",
+	  "link_text": "点击此以了解详情"
+	},
+	{
+	  "type": "text",
+	  "text": "赞美$(3)Alexthe668$(0)。$(br)由于晓乐太懒不想写，请移步隔壁中文mod百科网站查看。"
+	}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "猪灵交易（未完成）",
+  "icon": "minecraft:gold_ingot",
+  "category": "patchouli:tweak",
+  "sortnum": 12,
+  "pages": [
+	{
+	  "type": "text",
+	  "text": "#未完成"
+	}
+  ]
+}

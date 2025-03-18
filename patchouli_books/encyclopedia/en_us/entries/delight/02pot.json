@@ -1,0 +1,16 @@
+{
+  "name": "厨锅",
+  "icon": "farmersdelight:cooking_pot",
+  "category": "patchouli:delight",
+  "sortnum": 2,
+  "pages": [
+	{
+	  "type": "patchouli:spotlight",
+	  "item": "farmersdelight:cooking_pot"
+	},
+	{
+	  "type": "text",
+	  "text": "农夫乐事的主要烹饪工作台，置于$(3)热源$(0)之上方可正常工作。"
+	}
+  ]
+}

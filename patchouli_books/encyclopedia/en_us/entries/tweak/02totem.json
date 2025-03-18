@@ -1,0 +1,16 @@
+{
+  "name": "不死图腾护符",
+  "icon": "minecraft:totem_of_undying",
+  "category": "patchouli:tweak",
+  "sortnum": 2,
+  "pages": [
+	{
+	  "type": "patchouli:spotlight",
+	  "item": "minecraft:totem_of_undying"
+	},
+	{
+	  "type": "text",
+	  "text": "服务器内的不死图腾现可以置于$(6)护符$(0)栏，以解放你的副手栏位。"
+	}
+  ]
+}

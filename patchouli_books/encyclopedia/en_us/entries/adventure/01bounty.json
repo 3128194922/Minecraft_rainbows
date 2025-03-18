@@ -1,0 +1,16 @@
+{
+  "name": "赏金（未完成）",
+  "icon": "bountiful:bountyboard",
+  "category": "patchouli:adventure",
+  "sortnum": 1,
+  "pages": [
+	{
+	  "type": "patchouli:spotlight",
+	  "item": "bountiful:bountyboard"
+	},
+	{
+	  "type": "text",
+	  "text": "在主世界村庄会生成悬赏板，其内有各种会刷新的限时任务，可以通过$(5)悬赏令$(0)改变任务池，$(br)#同时悬赏也是$(6)生命之果$(0)唯一获取方式。"
+	}
+  ]
+}

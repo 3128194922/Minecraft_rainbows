@@ -1,0 +1,16 @@
+{
+  "name": "蠢猪质变",
+  "icon": "environmental:truffle",
+  "category": "patchouli:tweak",
+  "sortnum": 9,
+  "pages": [
+	{
+	  "type": "patchouli:spotlight",
+	  "item": "environmental:truffle"
+	},
+	{
+	  "type": "text",
+	  "text": "埋藏的松露生成于泥土之中，玩家可以给猪喂食$(6)金胡萝卜$(0)。之后，猪会开始走动以寻找埋藏的松露。$(br)#若找到埋藏的松露，猪会停下并冒出金色的粒子。"
+	}
+  ]
+}

@@ -1,0 +1,23 @@
+
+["Masquerader Mod Config"]
+	#How many Masqueraders each wave.
+	#Requires game restart.
+	#Must have no more and no less than 8 integers.
+	#If you have the Illage and Spillage mod, you can instead use the Boss Randomizer for better compatibility.
+	#Note that you CANNOT have a native I&S boss in the same wave as a Masquerader or else they will both have their forcefields active permanently.
+	"Masquerader Raidcount" = [0, 0, 0, 0, 0, 0, 0, 0]
+	#Whether or not the Masquerader has a boss health bar. Bar does not display in raids
+	#Default: true
+	"Masquerader Boss Bar" = true
+	#Should the Masquerader only be allowed to fight once all other raiders in the wave are killed?
+	#Default: true
+	"Masquerader Forcefield" = true
+	#Controls if Masquerader should despawn if it spawns in the 7th wave before the bonus wave.
+	#Overrides Masquerader Raidcount.
+	#Default = true
+	"Only One Masquerader" = true
+	#Whether or not to use the alternate model and textures for the Masquerader, mask items, and masked Illagers made by maedus.
+	#Requires game restart.
+	#Default = false
+	"Use Alternate Textures" = true
+

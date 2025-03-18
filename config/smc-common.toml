@@ -1,0 +1,16 @@
+
+[LuckyClover]
+	#If it's true, Lucky Clover will drop banned items (like Debug and Creative items)
+	LuckyCloverCreative = false
+	#If it's true, Lucky Clover will get random stack size of item (depends on the max stack size of this item)
+	LuckyCloverStack = false
+	#If it's true, Lucky Clover will lost the ability of dropping items.
+	LuckyCloverDisable = true
+
+[LuckyNugget]
+	#Define the duration of effects which gives by Lucky Nugget (in tick)
+	#Range: > 0
+	LuckyNuggetDuration = 6000
+	#If it's true, the duration of effects gives by Lucky Nugget will be infinite.
+	LuckyNuggetInfinite = false
+

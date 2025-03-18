@@ -1,0 +1,16 @@
+{
+  "name": "潜影盒背包",
+  "icon": "minecraft:shulker_shell",
+  "category": "patchouli:tweak",
+  "sortnum": 1,
+  "pages": [
+	{
+	  "type": "patchouli:spotlight",
+	  "item": "minecraft:shulker_box"
+	},
+	{
+	  "type": "text",
+	  "text": "我们的服务器不使用传统的背包模组，而是为原版的潜影盒添加背包的功能。$(br)潜影盒现在可以在$(6)被鼠标拖动时$(0)，与玩家背包界面的物品$(6)右键互动$(0)以快速装入。$(br)同时按$(3)“X”$(0)键可以快捷访问饰品栏的潜影盒UI。"
+	}
+  ]
+}

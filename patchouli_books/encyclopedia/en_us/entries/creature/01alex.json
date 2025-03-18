@@ -1,0 +1,16 @@
+{
+  "name": "Alex的生物",
+  "icon": "alexsmobs:animal_dictionary",
+  "category": "patchouli:creature",
+  "sortnum": 1,
+  "pages": [
+	{
+	  "type": "patchouli:crafting",
+	  "recipe": "alexsmobs:animal_dictionary"
+	},
+	{
+	  "type": "text",
+	  "text": "赞美$(3)Alexthe668$(0)，这个模组的大部分内容在左侧书籍已有记载。"
+	}
+  ]
+}

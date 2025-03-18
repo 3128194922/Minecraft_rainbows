@@ -1,0 +1,17 @@
+{
+  "name": "凋灵",
+  "icon": "minecraft:nether_star",
+  "category": "patchouli:adventure",
+  "sortnum": 8,
+  "pages": [
+	{
+		"type": "entity",
+		"entity": "minecraft:wither",
+		"scale": 0.75,
+		"offset": 0.0,
+		"rotate": true,
+		"default_rotation": -45,
+		"text": "相较原版，凋灵得到了巨幅强化，同时只能在下界召唤凋灵。"
+	}
+  ]
+}

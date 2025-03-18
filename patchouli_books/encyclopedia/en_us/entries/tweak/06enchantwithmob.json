@@ -1,0 +1,22 @@
+{
+  "name": "生物附魔",
+  "icon": "enchantwithmob:mob_enchant_book",
+  "category": "patchouli:tweak",
+  "sortnum": 6,
+  "pages": [
+	{
+		"type": "entity",
+		"entity": "enchantwithmob:enchanter",
+		"scale": 0.75,
+		"offset": 0.0,
+		"rotate": true,
+		"default_rotation": -45,
+		"name": "附魔师",
+		"text": "源自《Minecraft_Dungeon》"
+	},
+	{
+	  "type": "text",
+	  "text": "#无害生物和凋零以及末影龙以外的生物生成时有概率附上附魔。$(br)#你可以在$(2)袭击$(0)找到$(5)附魔师$(0)（如左图），击败他以获得生物附魔书，为自己或者生物附魔。"
+	}
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Cry Me A River",
+  "icon": "minecraft:ghast_tear",
+  "category": "patchouli:tweak",
+  "sortnum": 10,
+  "pages": [
+	{
+		"type": "entity",
+		"entity": "minecraft:ghast",
+		"scale": 0.5,
+		"offset": -2.0,
+		"rotate": true,
+		"default_rotation": -45,
+		"name": "史蒂夫就是衣冠禽兽！",
+		"text": "奴役恶魂着实无耻.tmol"
+	},
+	{
+	  "type": "text",
+	  "text": "#一只无辜的恶魂，被迫成为了苦难的载体，这简直是对自然的亵渎。$(br)#当玩家在砧板上切（机械手切也行）$(2)洋葱$(0)时，恶魂会被熏出$(5)恶魂之泪$(0)。"
+	}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "主世界概况",
+  "icon": "environmental:cartwheel",
+  "category": "patchouli:main",
+  "sortnum": 7,
+  "pages": [
+	{
+	  "type": "text",
+		"text": "本服务器的主世界因自然环境Mod和悠然一派Mod新增了几个风景柔和的宜居群系，这些群系内存在着各种效用型的环境互动，还请各位保持积极和休闲的态度沉浸体验主世界风光。"
+	}
+	]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "笼头怪",
+  "icon": "minecraft:spawner",
+  "category": "patchouli:creature",
+  "sortnum": 2,
+  "pages": [
+	{
+		"type": "entity",
+		"entity": "spawnerhead:spawner_head",
+		"scale": 1.0,
+		"offset": 0.0,
+		"rotate": true,
+		"default_rotation": -45,
+		"name": "笼头怪",
+		"text": "我也不知道为什么不显示他的刷怪笼脑袋"
+	},
+	{
+	  "type": "text",
+	  "text": "#笼头怪是僵尸的特殊变体，约有$(5)二十分之一$(0)的概率替换僵尸生成。$(br)约等于移动的刷怪笼，同时约有$(6)5%$(0)的概率死后弹出头上的刷怪笼方块。"
+	}
+  ]
+}

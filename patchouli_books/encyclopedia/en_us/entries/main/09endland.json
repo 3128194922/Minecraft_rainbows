@@ -1,0 +1,12 @@
+{
+  "name": "末地概况",
+  "icon": "minecraft:end_crystal",
+  "category": "patchouli:main",
+  "sortnum": 9,
+  "pages": [
+	{
+	  "type": "text",
+	  "text": "末地相较于其他两个维度略为空旷，而幽仪菌林则为死气沉沉的末地添了一分生气，使之活跃起来，服务器内末地的大部分新内容均集中于幽仪菌林群系，届时还请仔细探索。"
+	}
+  ]
+}
