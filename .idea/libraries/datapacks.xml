@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="datapacks">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/config/paxi/datapacks/Bountiful_example.zip!/" />
+      <root url="jar://$PROJECT_DIR$/config/paxi/datapacks/curios_example.zip!/" />
+      <root url="jar://$PROJECT_DIR$/config/paxi/datapacks/feiche.zip!/" />
+      <root url="jar://$PROJECT_DIR$/config/paxi/datapacks/regoblien.zip!/" />
+      <root url="jar://$PROJECT_DIR$/config/paxi/datapacks/server_achievements.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

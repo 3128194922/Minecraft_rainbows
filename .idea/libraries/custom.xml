@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="custom">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/config/yes_steve_model/custom/白上吹雪（可脱）.zip!/" />
+      <root url="jar://$PROJECT_DIR$/config/yes_steve_model/custom/霞沢美游2.0_垃姬兔（解压后打开里面的使用说明）.zip!/" />
+      <root url="jar://$PROJECT_DIR$/config/yes_steve_model/custom/pulana.zip!/" />
+      <root url="jar://$PROJECT_DIR$/config/yes_steve_model/custom/冬雪莲-传说品质.zip!/" />
+      <root url="jar://$PROJECT_DIR$/config/yes_steve_model/custom/我的世界Miku模型.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

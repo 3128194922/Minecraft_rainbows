@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="resourcepacks">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/config/paxi/resourcepacks/Minecraft-Mod-Language-Modpack-Converted-1.20.1.zip!/" />
+      <root url="jar://$PROJECT_DIR$/config/paxi/resourcepacks/服务器材质优化-v2.0.0.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
