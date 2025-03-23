@@ -14,6 +14,13 @@ ServerEvents.recipes(event=>{
     //CCK实验性物品配方
     event.remove({output:'environmental:cherry_pie'})//删除配方，通过物品ID
     event.remove({output:'environmental:truffle_pie'})
+    //染料棒
+    event.remove({output:'protection_pixel:flarerod'})
+    event.recipes.create.filling('protection_pixel:flarerod', [Fluid.of("rainbow:oil",100),'minecraft:blaze_rod'])
+    //强化纤维
+    event.replaceInput({output:'protection_pixel:reinforcedfiber'},'minecraft:paper','vc_gliders:reinforced_paper')
+    //单元箱
+    event.replaceInput({output:'backpack_pixel:unitbox'},'minecraft:iron_nugget','minecraft:shulker_box')
     //音乐播放器
     event.remove({output:'netmusic:music_player'})
     event.shaped('netmusic:music_player',[
