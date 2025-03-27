@@ -1,0 +1,354 @@
+# ExtraGore Particle Group Configuration
+# ------------------------------------------------------
+# This file enables the creation of custom blood particle properties for various entities.
+# Begin by uniquely naming each property group to effectively manage different settings.
+
+# Particle Behavior Options:
+# - Bounce: The particle will bounce off surfaces like a solid object.
+# - Stick: The particle will stick to walls and other surfaces.
+# - Magic: Some particles will fall to the ground while the majority will fly up to the sky.
+# - None: The particle won't have any special effects.
+
+# Particle Weight Options:
+# - Heavy: The particle will sink to the bottom when it's underwater.
+# - Light: The particle will float up to the top of the water.
+
+# Particle State Options:
+# - Liquid: The particle will get larger during its lifetime.
+# - Solid: The particle will remain the same size all the time.
+
+# Color Settings:
+# Set an RGB color value to visually distinguish particles for various entities.
+
+# How to Use:
+# 1. Define a group with a name, including behavior, weight, state, color and entity values.
+# 2. Example:
+#    ["Color Group Name"]
+#    behavior = Choose from "Stuck", "Bounce" or "None"
+#    weight = Choose from "Heavy" or "Light"
+#    state = Choose from "Liquid" or "Solid"
+#    color = "R,G,B"
+#    entities = ["entityID1", "entityID2"]
+# 3. You can modify or delete any predefined groups, except for the red group. The red group is non editable and serves only to show you unused entities which are compatible with different color groups.
+# 4. Add your custom color groups under an already predefined group, except for the red one.
+# 5. Ensure each color group has a unique name and is properly structured.
+
+# Note: Incorrectly formatted lines or unrecognized entity IDs will be ignored.
+# ------------------------------------------------------
+
+["Violet Group"]
+behavior = "Magic"
+weight = "Light"
+state = "Liquid"
+color = "128,0,128"
+entities = ["minecraft:enderman", "minecraft:endermite", "minecraft:phantom", "minecraft:shulker", "minecraft:silverfish", "minecraft:warden", "minecraft:ender_dragon"]
+
+["White Group"]
+behavior = "Bounce"
+weight = "Heavy"
+state = "Solid"
+color = "255,255,255"
+entities = ["minecraft:skeleton", "minecraft:ghast", "minecraft:iron_golem", "minecraft:skeleton_horse", "minecraft:snow_golem", "minecraft:stray", "minecraft:vex", "minecraft:wither_skeleton", "minecraft:allay", "minecraft:wither"]
+
+["Green Group"]
+behavior = "Stuck"
+weight = "Light"
+state = "Liquid"
+color = "0,255,0"
+entities = ["minecraft:cave_spider", "minecraft:creeper", "minecraft:slime", "minecraft:spider", "minecraft:witch"]
+
+["Yellow Group"]
+behavior = "Bounce"
+weight = "Heavy"
+state = "Solid"
+color = "255,255,0"
+entities = ["minecraft:blaze", "minecraft:magma_cube", "minecraft:strider"]
+
+["Blue Group"]
+behavior = "None"
+weight = "Light"
+state = "Liquid"
+color = "0,0,255"
+entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian", "minecraft:glow_squid"]
+
+# Auto generated red color group - do not edit. Use this as reference for unused entity IDs.
+"255,0,0" = [
+    "infinitygolem:infinity_golem",
+    "alexsmobs:snow_leopard",
+    "endermanoverhaul:warped_forest_enderman",
+    "alexsmobs:seal",
+    "environmental:deer",
+    "endermanoverhaul:flower_fields_enderman",
+    "alexsmobs:roadrunner",
+    "alexsmobs:laviathan",
+    "minecraft:trader_llama",
+    "endermanoverhaul:desert_enderman",
+    "youkaishomecoming:rumia",
+    "savage_and_ravage:trickster",
+    "alexsmobs:endergrade",
+    "goblintraders:goblin_trader",
+    "minecraft:horse",
+    "minecraft:llama",
+    "alexsmobs:maned_wolf",
+    "alexsmobs:skreecher",
+    "minecraft:tadpole",
+    "minecraft:dolphin",
+    "environmental:yak",
+    "endermanoverhaul:badlands_enderman",
+    "alexsmobs:gelada_monkey",
+    "masquerader_mod:masked_illusioner",
+    "alexsmobs:hammerhead_shark",
+    "alexsmobs:dropbear",
+    "alexsmobs:tiger",
+    "alexsmobs:grizzly_bear",
+    "alexsmobs:murmur_head",
+    "environmental:duck",
+    "endergetic:purpoid",
+    "minecraft:bee",
+    "alexsmobs:devils_hole_pupfish",
+    "minecraft:illusioner",
+    "goblintraders:vein_goblin_trader",
+    "endermanoverhaul:axolotl_pet_enderman",
+    "minecraft:mooshroom",
+    "alexsmobs:bison",
+    "youkaishomecoming:kochiya_sanae",
+    "minecraft:drowned",
+    "minecraft:axolotl",
+    "alexsmobs:gorilla",
+    "environmental:tapir",
+    "alexsmobs:tusklin",
+    "quark:crab",
+    "masquerader_mod:masked_evoker",
+    "alexsmobs:cosmic_cod",
+    "alexsmobs:underminer",
+    "netherexp:apparition",
+    "minecraft:wandering_trader",
+    "environmental:reindeer",
+    "netherdepthsupgrade:lava_pufferfish",
+    "netherdepthsupgrade:blazefish",
+    "alexsmobs:kangaroo",
+    "endermanoverhaul:hammerhead_pet_enderman",
+    "youkaishomecoming:komeiji_koishi",
+    "creeperoverhaul:spruce_creeper",
+    "netherdepthsupgrade:bonefish",
+    "alexsmobs:hummingbird",
+    "collectorsreap:platinum_bass",
+    "endergetic:glider_eetle",
+    "alexsmobs:crow",
+    "endermanoverhaul:cave_enderman",
+    "endermanoverhaul:mushroom_fields_enderman",
+    "alexsmobs:guster",
+    "minecraft:pufferfish",
+    "touhou_little_maid:fairy",
+    "minecraft:fox",
+    "netherdepthsupgrade:obsidianfish",
+    "alexsmobs:warped_toad",
+    "minecraft:chicken",
+    "alexsmobs:giant_squid",
+    "minecraft:zombie",
+    "alexsmobs:emu",
+    "alexsmobs:cockroach",
+    "creeperoverhaul:savannah_creeper",
+    "alexsmobs:flutter",
+    "minecraft:hoglin",
+    "netherdepthsupgrade:eyeball_fish",
+    "endermanoverhaul:pet_enderman",
+    "tradersindisguise:bow_ambusher",
+    "alexsmobs:capuchin_monkey",
+    "minecraft:polar_bear",
+    "minecraft:zombified_piglin",
+    "endermanoverhaul:ice_spikes_enderman",
+    "minecraft:turtle",
+    "minecraft:sheep",
+    "netherdepthsupgrade:searing_cod",
+    "quark:wraith",
+    "alexsmobs:rattlesnake",
+    "quark:foxhound",
+    "youkaishomecoming:star_sapphire",
+    "endergetic:brood_eetle",
+    "netherdepthsupgrade:wither_bonefish",
+    "alexsmobs:bone_serpent_part",
+    "alexsmobs:raccoon",
+    "minecraft:ravager",
+    "alexsmobs:bone_serpent",
+    "alexsmobs:potoo",
+    "youkaishomecoming:fairy",
+    "alexsmobs:fly",
+    "quark:shiba",
+    "alexsmobs:straddler",
+    "alexsmobs:sea_bear",
+    "youkaishomecoming:yukari",
+    "bagus_lib:mini_bagu",
+    "alexsmobs:mudskipper",
+    "protection_pixel:falcondrone",
+    "alexsmobs:sugar_glider",
+    "endermanoverhaul:swamp_enderman",
+    "alexsmobs:crimson_mosquito",
+    "creeperoverhaul:beach_creeper",
+    "netherdepthsupgrade:magmacubefish",
+    "endergetic:booflo_baby",
+    "savage_and_ravage:executioner",
+    "alexsmobs:orca",
+    "protection_pixel:armorentity",
+    "masquerader_mod:masked_villager",
+    "creeperoverhaul:hills_creeper",
+    "alexsmobs:jerboa",
+    "minecraft:bat",
+    "alexsmobs:cosmaw",
+    "infinitygolem:shockwave",
+    "endermanoverhaul:spirit",
+    "alexsmobs:comb_jelly",
+    "creeperoverhaul:bamboo_creeper",
+    "spawnerhead:spawner_head",
+    "fromtheshadows:froglin",
+    "touhou_little_maid:maid",
+    "alexsmobs:skunk",
+    "alexsmobs:enderiophage",
+    "alexsmobs:sunbird",
+    "fromtheshadows:nehemoth",
+    "environmental:koi",
+    "alexsmobs:tasmanian_devil",
+    "minecraft:cat",
+    "alexsmobs:stradpole",
+    "netherexp:banshee",
+    "minecraft:tropical_fish",
+    "endermanoverhaul:savanna_enderman",
+    "endergetic:puff_bug",
+    "minecraft:panda",
+    "minecraft:zombie_villager",
+    "environmental:zebra",
+    "alexsmobs:froststalker",
+    "minecraft:giant",
+    "endermanoverhaul:coral_enderman",
+    "enchantwithmob:enchanter",
+    "alexsmobs:lobster",
+    "alexsmobs:seagull",
+    "endermanoverhaul:end_enderman",
+    "alexsmobs:moose",
+    "alexsmobs:shoebill",
+    "alexsmobs:farseer",
+    "endermanoverhaul:soulsand_valley_enderman",
+    "alexsmobs:warped_mosco",
+    "creeperoverhaul:cave_creeper",
+    "minecraft:husk",
+    "bosses_of_mass_destruction:gauntlet",
+    "savage_and_ravage:skeleton_villager",
+    "youkaishomecoming:kirisame_marisa",
+    "alexsmobs:komodo_dragon",
+    "endermanoverhaul:dark_oak_enderman",
+    "minecraft:donkey",
+    "quark:stoneling",
+    "minecraft:piglin_brute",
+    "alexsmobs:crocodile",
+    "quark:toretoise",
+    "netherexp:wisp",
+    "bosses_of_mass_destruction:void_blossom",
+    "alexsmobs:triops",
+    "alexsmobs:rhinoceros",
+    "collectorsreap:chieftain_crab",
+    "alexsmobs:frilled_shark",
+    "alexsmobs:bald_eagle",
+    "endermanoverhaul:scarab",
+    "alexsmobs:blobfish",
+    "tradersindisguise:sickle_ambusher",
+    "alexsmobs:mimicube",
+    "collectorsreap:urchin",
+    "environmental:slabfish",
+    "alexsmobs:void_worm",
+    "minecraft:parrot",
+    "alexsmobs:centipede_head",
+    "creeperoverhaul:desert_creeper",
+    "minecraft:frog",
+    "alexsmobs:banana_slug",
+    "savage_and_ravage:griefer",
+    "savage_and_ravage:iceologer",
+    "alexsmobs:mimic_octopus",
+    "alexsmobs:bunfungus",
+    "alexsmobs:void_worm_part",
+    "minecraft:mule",
+    "ragnagoblin:ragna_goblin",
+    "minecraft:vindicator",
+    "alexsmobs:flying_fish",
+    "minecraft:evoker",
+    "creeperoverhaul:mushroom_creeper",
+    "quark:forgotten",
+    "alexsmobs:tarantula_hawk",
+    "fromtheshadows:cleric",
+    "alexsmobs:cachalot_whale",
+    "endergetic:booflo_adolescent",
+    "endermanoverhaul:nether_wastes_enderman",
+    "creeperoverhaul:ocean_creeper",
+    "infinitygolem:magma_blast",
+    "youkaishomecoming:luna_child",
+    "youkaishomecoming:sunny_milk",
+    "creeperoverhaul:dark_oak_creeper",
+    "creeperoverhaul:badlands_creeper",
+    "creeperoverhaul:snowy_creeper",
+    "netherdepthsupgrade:glowdine",
+    "youkaishomecoming:lamprey",
+    "alexsmobs:terrapin",
+    "bosses_of_mass_destruction:lich",
+    "alexsmobs:anaconda",
+    "atmospheric:cochineal",
+    "minecraft:pig",
+    "alexsmobs:alligator_snapping_turtle",
+    "creeperoverhaul:swamp_creeper",
+    "youkaishomecoming:shrine_maiden",
+    "bosses_of_mass_destruction:obsidilith",
+    "endermanoverhaul:crimson_forest_enderman",
+    "minecraft:goat",
+    "atmospheric:tetra",
+    "minecraft:cod",
+    "alexsmobs:mantis_shrimp",
+    "netherdepthsupgrade:soulsucker",
+    "netherexp:vessel",
+    "alexsmobs:platypus",
+    "endermanoverhaul:snowy_enderman",
+    "minecraft:cow",
+    "youkaishomecoming:mystia_lorelei",
+    "alexsmobs:rocky_roller",
+    "alexsmobs:soul_vulture",
+    "alexsmobs:blue_jay",
+    "masquerader_mod:masquerader_clone",
+    "alexsmobs:toucan",
+    "minecraft:salmon",
+    "netherdepthsupgrade:fortressgrouper",
+    "alexsmobs:anteater",
+    "alexsmobs:rain_frog",
+    "masquerader_mod:masked_vindicator",
+    "minecraft:rabbit",
+    "minecraft:pillager",
+    "alexsmobs:murmur",
+    "minecraft:zoglin",
+    "savage_and_ravage:creepie",
+    "smc:salt_fish",
+    "collectorsreap:clam",
+    "alexsmobs:leafcutter_ant",
+    "netherexp:ecto_slab",
+    "creeperoverhaul:dripstone_creeper",
+    "alexsmobs:mungus",
+    "alexsmobs:caiman",
+    "alexsmobs:spectre",
+    "masquerader_mod:masquerader",
+    "creeperoverhaul:jungle_creeper",
+    "alexsmobs:catfish",
+    "youkaishomecoming:youkai",
+    "endergetic:charger_eetle",
+    "minecraft:piglin",
+    "alexsmobs:skelewag",
+    "alexsmobs:elephant",
+    "alexsmobs:gazelle",
+    "minecraft:sniffer",
+    "endermanoverhaul:windswept_hills_enderman",
+    "masquerader_mod:masked_witch",
+    "minecraft:zombie_horse",
+    "minecraft:camel",
+    "collectorsreap:tiger_prawn",
+    "endermanoverhaul:end_islands_enderman",
+    "endergetic:booflo",
+    "netherexp:stampede",
+    "minecraft:ocelot",
+    "youkaishomecoming:cirno",
+    "fromtheshadows:bulldrogioth",
+    "minecraft:wolf"
+]

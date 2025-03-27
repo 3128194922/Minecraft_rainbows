@@ -13,7 +13,7 @@
 
 [ammo]
 	#Warning: Ammo with explosive properties can break blocks
-	ExplosiveAmmoDestroysBlock = false
+	ExplosiveAmmoDestroysBlock = true
 	#Warning: Ammo with explosive properties can set the surroundings on fire
 	ExplosiveAmmoFire = false
 	#Ammo with explosive properties can add knockback effect
@@ -24,9 +24,9 @@
 	#Those blocks that the ammo can pass through
 	PassThroughBlocks = []
 	#Whether a ammo can break the glass
-	DestroyGlass = false
+	DestroyGlass = true
 	#Whether a ammo can ignite the block
-	IgniteBlock = false
+	IgniteBlock = true
 	#Whether a ammo can ignite the entity
 	IgniteEntity = true
 

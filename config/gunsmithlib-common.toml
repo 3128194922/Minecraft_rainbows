@@ -1,0 +1,6 @@
+#Amount of damage scale boost per level of Crossfire buff gives
+#Range: 2.2250738585072014E-308 ~ 1.7976931348623157E308
+crossfire_buff_power = 0.3
+#Enable calling hurt function with invokespecial on entities with a specific tag
+enable_special_hurt = true
+

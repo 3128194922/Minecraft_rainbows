@@ -1,0 +1,22 @@
+
+[concentration]
+	#Whether the window size and pos is customized
+	customized = false
+	#Whether the window pos should related to the monitor
+	related = false
+	#Fullscreen mode
+	#Allowed Values: BORDERLESS, NATIVE
+	fullscreen = "BORDERLESS"
+	#X coordinate
+	#Range: > -2147483648
+	x = 0
+	#Width
+	#Range: > 1
+	width = 800
+	#Y coordinate
+	#Range: > -2147483648
+	y = 0
+	#Height
+	#Range: > 1
+	height = 600
+

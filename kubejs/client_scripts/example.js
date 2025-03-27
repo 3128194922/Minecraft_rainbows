@@ -9,6 +9,7 @@ ItemEvents.tooltip((event) =>{
     //添加一个最普通的文本，这个文本是在最下面进行显示的
     event.add('rainbow:super_mechanism', "这玩意好像用奇怪的东西合成...")
     event.add('rainbow:shit', "孩子们，这不好吃.jpg")
+    event.add('rainbow:tengzou_noodles', "出了滕州你才发现，这面有多么好吃")
     //用数组添加文本，在游戏内数组的每个文本都独占一行
     //event.add('diamond', ["数组文本1","数组文本2"])
     //当你需要拼接字符串时可以使用下面方法

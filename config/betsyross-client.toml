@@ -1,0 +1,4 @@
+#Level of animation detail for flags to use. Only applies to certain flags.
+#Allowed Values: NO_WAVE, WAVE
+animationDetail = "WAVE"
+

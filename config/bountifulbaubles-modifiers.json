@@ -1,0 +1,14 @@
+{
+  "modifiableItems": {
+    "artifacts:cross_necklace": {
+      "requiredItem": "bountifulbaubles:resplendent_token",
+      "experienceCost": 5,
+      "materialCost": 1
+    },
+    "artifacts:feral_claws": {
+      "requiredItem": "bountifulbaubles:resplendent_token",
+      "experienceCost": 5,
+      "materialCost": 1
+    }
+  }
+}
