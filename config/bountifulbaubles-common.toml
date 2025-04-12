@@ -158,7 +158,7 @@
 	caveSpiderBezoarChance = 0.05
 	#唤魔者掉落无限图腾概率 (默认10%)
 	#Range: 0.0 ~ 1.0
-	evokerTotemChance = 0.1
+	evokerTotemChance = 0.0
 	#远古守卫掉落维生素概率 (默认100%)
 	#Range: 0.0 ~ 1.0
 	elderGuardianVitaminChance = 1.0

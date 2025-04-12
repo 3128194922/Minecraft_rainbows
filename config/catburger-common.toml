@@ -1,0 +1,26 @@
+
+#config
+[Config]
+	#totem effect active?
+	active = true
+	#wake up can reset totem effect cooldown?
+	can_reset = true
+	#totem effect cooldown(tick)
+	#Range: > 0
+	totem_cooldown = 36000
+	#totem effect cooldown(tick)
+	#Range: > 0
+	curios_cooldown = 600
+	#food restoration form curios effect
+	#Range: 0 ~ 20
+	foodRestoration = 1
+	#health restoration form totem effect
+	#Range: > 0
+	health = 20
+	#food restoration form totem effect
+	#Range: 0 ~ 20
+	foodLevel = 20
+	#saturation restoration form totem effect
+	#Range: 0 ~ 20
+	saturation = 20
+

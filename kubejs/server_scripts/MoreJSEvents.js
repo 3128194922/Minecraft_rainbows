@@ -88,5 +88,4 @@ MoreJSEvents.villagerTrades((event) => {
     event.addTrade("shepherd",5,'64x minecraft:emerald','minecraft:cow_spawn_egg');
     event.addTrade("shepherd",5,'64x minecraft:emerald','minecraft:sheep_spawn_egg');
     event.addTrade("shepherd",5,'64x minecraft:emerald','minecraft:pig_spawn_egg');
-    
 });

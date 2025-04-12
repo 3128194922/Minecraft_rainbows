@@ -18,6 +18,8 @@ ServerEvents.recipes(event=>{
     event.replaceInput({output:'protection_pixel:reinforcedfiber'},'minecraft:paper','vc_gliders:reinforced_paper')
     //单元箱
     event.replaceInput({output:'backpack_pixel:unitbox'},'minecraft:iron_nugget','minecraft:shulker_box')
+    //猫猫汉堡
+    event.remove({output:'catburger:cat_burger'})
     //音乐播放器
     event.remove({output:'netmusic:music_player'})
     event.shaped('netmusic:music_player',[
@@ -91,7 +93,21 @@ ServerEvents.recipes(event=>{
     event.stonecutting('create:water_wheel','create:large_water_wheel')
     event.stonecutting('create:shaft','create:cogwheel')
     //光源方块合成
-    event.shapeless('minecraft:light','minecraft:torch')
+    event.shapeless(Item.of('minecraft:light', '{BlockStateTag:{level:"1"}}'),'1x minecraft:torch').id('kubejs:light_1_manual_only')
+    event.shapeless(Item.of('minecraft:light', '{BlockStateTag:{level:"2"}}'),'2x minecraft:torch').id('kubejs:light_2_manual_only')
+    event.shapeless(Item.of('minecraft:light', '{BlockStateTag:{level:"3"}}'),'3x minecraft:torch').id('kubejs:light_3_manual_only')
+    event.shapeless(Item.of('minecraft:light', '{BlockStateTag:{level:"4"}}'),'4x minecraft:torch').id('kubejs:light_4_manual_only')
+    event.shapeless(Item.of('minecraft:light', '{BlockStateTag:{level:"5"}}'),'5x minecraft:torch').id('kubejs:light_5_manual_only')
+    event.shapeless(Item.of('minecraft:light', '{BlockStateTag:{level:"6"}}'),'6x minecraft:torch').id('kubejs:light_6_manual_only')
+    event.shapeless(Item.of('minecraft:light', '{BlockStateTag:{level:"7"}}'),'7x minecraft:torch').id('kubejs:light_7_manual_only')
+    event.shapeless(Item.of('minecraft:light', '{BlockStateTag:{level:"8"}}'),'8x minecraft:torch').id('kubejs:light_8_manual_only')
+    event.shapeless(Item.of('minecraft:light', '{BlockStateTag:{level:"9"}}'),'9x minecraft:torch').id('kubejs:light_9_manual_only')
+    event.shapeless(Item.of('minecraft:light', '{BlockStateTag:{level:"10"}}'),'1x minecraft:lantern').id('kubejs:light_10_manual_only')
+    event.shapeless(Item.of('minecraft:light', '{BlockStateTag:{level:"11"}}'),'2x minecraft:lantern').id('kubejs:light_11_manual_only')
+    event.shapeless(Item.of('minecraft:light', '{BlockStateTag:{level:"12"}}'),'3x minecraft:lantern').id('kubejs:light_12_manual_only')
+    event.shapeless(Item.of('minecraft:light', '{BlockStateTag:{level:"13"}}'),'4x minecraft:lantern').id('kubejs:light_13_manual_only')
+    event.shapeless(Item.of('minecraft:light', '{BlockStateTag:{level:"14"}}'),'5x minecraft:lantern').id('kubejs:light_14_manual_only')
+    event.shapeless(Item.of('minecraft:light', '{BlockStateTag:{level:"15"}}'),'6x minecraft:lantern').id('kubejs:light_15_manual_only')
     //量天尺配方
     event.shapeless('atmospheric:dragon_roots',['atmospheric:dragon_fruit','minecraft:vine'])
     //冰红茶配方
@@ -130,6 +146,11 @@ ServerEvents.recipes(event=>{
     event.recipes.create.mixing("minecraft:netherrack",[Fluid.of("minecraft:lava",25), 'minecraft:cobblestone','create:cinder_flour'])
     //枪械禁用
     event.remove({output:'@tacz'})
+    event.remove({output:Item.of('tacz:workbench_b', '{BlockId:"cyber_armorer:workbench_cyber_armorer"}')})
+    event.remove({output:Item.of('tacz:ammo', '{AmmoId:"cyber_armorer:material_1"}')})
+    event.remove({output:Item.of('tacz:ammo', '{AmmoId:"cyber_armorer:material_2"}')})
+    event.remove({output:Item.of('tacz:ammo', '{AmmoId:"cyber_armorer:material_3"}')})
+    event.remove({output:Item.of('tacz:ammo', '{AmmoId:"cyber_armorer:material_4"}')})
     //雕刻南瓜
     event.stonecutting("minecraft:carved_pumpkin","minecraft:pumpkin");
     //凋零骷髅合成

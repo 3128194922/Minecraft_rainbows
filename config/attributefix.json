@@ -253,17 +253,6 @@
         "value": 1
       }
     },
-    "l2damagetracker:damage_absorption": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10000,
-        "value": 10000
-      }
-    },
     "forge:entity_reach": {
       "enabled": false,
       "min": {
@@ -273,6 +262,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "l2damagetracker:damage_absorption": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10000,
+        "value": 10000
       }
     },
     "tacz:tacz.bullet_resistance": {
@@ -572,17 +572,6 @@
         "value": 1024
       }
     },
-    "protection_pixel:weakradiation": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1,
-        "value": 1
-      }
-    },
     "gunsmithlib:bullet_speed": {
       "enabled": false,
       "min": {
@@ -592,6 +581,17 @@
       "max": {
         "default": Infinity,
         "value": Infinity
+      }
+    },
+    "protection_pixel:weakradiation": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "l2damagetracker:crit_rate": {

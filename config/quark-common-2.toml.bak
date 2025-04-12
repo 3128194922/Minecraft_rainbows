@@ -1,0 +1,594 @@
+
+[general]
+	"Enable 'q' Button" = true
+	"'q' Button on the Right" = false
+	"Disable Q Menu Effects" = false
+	#How many advancements deep you can see in the advancement screen. Vanilla is 2.
+	#Allowed values: (0,)
+	"Advancement Visibility Depth" = 2
+	#Blocks that Quark should treat as Shulker Boxes.
+	"Shulker Boxes" = ["minecraft:white_shulker_box", "minecraft:orange_shulker_box", "minecraft:magenta_shulker_box", "minecraft:light_blue_shulker_box", "minecraft:yellow_shulker_box", "minecraft:lime_shulker_box", "minecraft:pink_shulker_box", "minecraft:gray_shulker_box", "minecraft:light_gray_shulker_box", "minecraft:cyan_shulker_box", "minecraft:purple_shulker_box", "minecraft:blue_shulker_box", "minecraft:brown_shulker_box", "minecraft:green_shulker_box", "minecraft:red_shulker_box", "minecraft:black_shulker_box"]
+	#Should Quark treat anything with 'shulker_box' in its item identifier as a shulker box?
+	"Interpret Shulker Box Like Blocks" = true
+	#Set to true if you need to find the class name for a screen that's causing problems
+	"Print Screen Classnames" = false
+	#A list of screens that can accept quark's buttons. Use "Print Screen Classnames" to find the names of any others you'd want to add.
+	"Allowed Screens" = []
+	#If set to true, the 'Allowed Screens' option will work as a Blacklist rather than a Whitelist. WARNING: Use at your own risk as some mods may not support this.
+	"Use Screen List Blacklist" = false
+	#If 'true' and TerraBlender is present, Quark will add a TerraBlender region. The region will contain vanilla biomes and the Glimmering Weald.
+	"Terrablender Add Region" = true
+	#Quark will set this weight for its TerraBlender region.
+	"Terrablender Region Weight" = 1
+	#If 'true', Quark will modify the `minecraft:overworld` MultiNoiseBiomeSourceParameterList preset, even when Terrablender is installed.
+	#This will have various knock-on effects but might make the Weald more common, or appear closer to modded biomes. Who knows?
+	"Terrablender Modify Vanilla Anyway" = false
+	#Set to false to disable the popup message telling you that you can config quark in the q menu
+	"Enable Onboarding" = true
+	#The amount of slots the chest button system should seek when trying to figure out if a container should be eligible for them.
+	"Chest Button Slot Target" = 27
+	#Set this to false to not generate the Quark Programmer Art resource pack
+	"Generate Programmer Art" = true
+
+	[general.chest_button_offsets]
+		"Player X" = 0
+		"Player Y" = 0
+		"Top X" = 0
+		"Top Y" = 0
+		"Middle X" = 0
+		"Middle Y" = 0
+
+[categories]
+	automation = true
+	building = true
+	management = true
+	tools = true
+	tweaks = true
+	world = true
+	mobs = true
+	client = true
+	experimental = true
+	oddities = true
+
+[automation]
+	"Chains Connect Blocks" = true
+	Chute = true
+	Crafter = true
+	"Dispensers Place Blocks" = true
+	"Ender Watcher" = true
+	"Feeding Trough" = true
+	Gravisand = true
+	"Iron Rod" = true
+	"Metal Buttons" = true
+	"Obsidian Plate" = true
+	"Pistons Move Tile Entities" = true
+	"Redstone Randomizer" = true
+
+	[automation.crafter]
+		#Setting this to true will change the Crafter to use Emi's original design instead of Mojang's.
+		#Emi's design allows only one item per slot, instead of continuing to fill it round robin.
+		#If this is enabled, Allow Items While Powered should also be set to false for the full design.
+		"Use Emi Logic" = false
+		#Set to false to allow items to be inserted into the Crafter even while it's powered.
+		"Allow Items While Powered" = true
+
+	[automation.dispensers_place_blocks]
+		Blacklist = ["minecraft:water", "minecraft:lava", "minecraft:fire"]
+		#Set to false to refrain from registering any behaviors for blocks that have optional dispense behaviors already set.
+		#An optional behavior is one that will defer to the generic dispense item behavior if its condition fails.
+		#e.g. the Shulker Box behavior is optional, because it'll throw out the item if it fails, whereas TNT is not optional.
+		#If true, it'll attempt to use the previous behavior before trying to place the block in the world.
+		#Requires a game restart to re-apply.
+		"Wrap Existing Behaviors" = true
+
+	[automation.feeding_trough]
+		#How long, in game ticks, between animals being able to eat from the trough
+		#Allowed values: [1,)
+		Cooldown = 30
+		#The maximum amount of animals allowed around the trough's range for an animal to enter love mode
+		"Max Animals" = 32
+		#The chance (between 0 and 1) for an animal to enter love mode when eating from the trough
+		#Allowed values: (0,1]
+		"Love Chance" = 0.333333333
+		Range = 10.0
+		#Chance that an animal decides to look for a through. Closer it is to 1 the more performance it will take. Decreasing will make animals take longer to find one
+		"Look Chance" = 0.015
+
+	[automation.iron_rod]
+		"Use Pre End Recipe" = false
+
+	[automation.metal_buttons]
+		"Enable Iron" = true
+		"Enable Gold" = true
+
+	[automation.pistons_move_tile_entities]
+		"Enable Chests Moving Together" = true
+		"Render Blacklist" = ["psi:programmer", "botania:starfield"]
+		"Movement Blacklist" = ["minecraft:spawner", "integrateddynamics:cable", "randomthings:blockbreaker", "minecraft:ender_chest", "minecraft:enchanting_table", "minecraft:trapped_chest", "quark:spruce_trapped_chest", "quark:birch_trapped_chest", "quark:jungle_trapped_chest", "quark:acacia_trapped_chest", "quark:dark_oak_trapped_chest", "endergetic:bolloom_bud"]
+		"Delayed Update List" = ["minecraft:dispenser", "minecraft:dropper"]
+
+[building]
+	"Celebratory Lamps" = true
+	"Compressed Blocks" = true
+	"Duskbound Blocks" = true
+	"Framed Glass" = true
+	"Glass Item Frame" = true
+	"Gold Bars" = true
+	Grate = true
+	Hedges = true
+	"Hollow Logs" = false
+	"Industrial Palette" = true
+	"Japanese Palette" = true
+	"Leaf Carpet" = true
+	Midori = true
+	"More Brick Types" = true
+	"More Mud Blocks" = true
+	"More Potted Plants" = true
+	"Nether Brick Fence Gate" = true
+	"Rainbow Lamps" = true
+	"Raw Metal Bricks" = true
+	Rope = true
+	"Shear Vines" = true
+	Shingles = true
+	"Soul Sandstone" = true
+	Stools = true
+	"Sturdy Stone" = true
+	Thatch = true
+	"Variant Bookshelves" = true
+	"Variant Chests" = true
+	"Variant Furnaces" = true
+	"Variant Ladders" = true
+	"Vertical Planks" = true
+	"Vertical Slabs" = true
+	"Wooden Posts" = true
+	"More Stone Variants" = true
+
+	[building.celebratory_lamps]
+		"Light Level" = 15
+
+	[building.compressed_blocks]
+		"Charcoal Block and Blaze Lantern Stay On Fire Forever" = true
+		#Allowed values: [0,)
+		"Charcoal Block Fuel Time" = 16000
+		#Allowed values: [0,)
+		"Blaze Lantern Fuel Time" = 24000
+		#Allowed values: [0,)
+		"Stick Block Fuel Time" = 900
+		"Enable Charcoal Block" = true
+		"Enable Sugar Cane Block" = true
+		"Enable Cactus Block" = true
+		"Enable Chorus Fruit Block" = true
+		"Enable Stick Block" = true
+		"Enable Apple Crate" = true
+		"Enable Golden Apple Crate" = true
+		"Enable Potato Crate" = true
+		"Enable Carrot Crate" = true
+		"Enable Golden Carrot Crate" = true
+		"Enable Beetroot Crate" = true
+		"Enable Cocoa Bean Sack" = true
+		"Enable Nether Wart Sack" = true
+		"Enable Gunpowder Sack" = true
+		"Enable Berry Sack" = true
+		"Enable Glow Berry Sack" = true
+		"Enable Blaze Lantern" = true
+		"Enable Bonded Leather" = true
+		"Enable Bonded Rabbit Hide" = true
+
+	[building.glass_item_frame]
+		"Glass Item Frames Update Maps" = true
+		#Set to true for faster map updates. Default is every 3s
+		"Glass Item Frames Update Maps Every Tick" = false
+		#The scale at which items render in the Glass Item Frame. To match the vanilla Item Frame size, set to 1.0
+		"Item Render Scale" = 1.5
+
+	[building.gold_bars]
+		"Generate In Nether Fortress" = true
+
+	[building.hollow_logs]
+		"Enable Auto Crawl" = true
+
+	[building.industrial_palette]
+		"Enable Iron Plates" = true
+		"Enable Iron Ladder" = true
+
+	[building.japanese_palette]
+		"Enable Paper Blocks" = true
+		"Enable Bamboo Mats" = true
+
+	[building.leaf_carpet]
+		#This feature disables itself if any of the following mods are loaded:
+		# - woodworks
+		# - immersive_weathering
+		#This is done to prevent content overlap.
+		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
+		"Ignore Anti Overlap" = false
+
+	[building.more_brick_types]
+		#This also comes with a utility recipe for Red Nether Bricks
+		"Enable Blue Nether Bricks" = true
+		#This also includes Red Sandstone Bricks and Soul Sandstone Bricks
+		"Enable Sandstone Bricks" = true
+		#This also includes Mossy Cobblestone Bricks
+		"Enable Cobblestone Bricks" = true
+		#Requires Cobblestone Bricks to be enabled
+		"Enable Blackstone Bricks" = true
+		#Requires Cobblestone Bricks to be enabled
+		"Enable Dirt Bricks" = true
+		#Requires Cobblestone Bricks to be enabled
+		"Enable Netherrack Bricks" = true
+
+	[building.rainbow_lamps]
+		"Light Level" = 15
+		#Whether Rainbow Lamps should be made from and themed on Corundum if that module is enabled.
+		"Use Corundum" = true
+
+	[building.rope]
+		#Set to true to allow ropes to move Tile Entities even if Pistons Push TEs is disabled.
+		#Note that ropes will still use the same blacklist.
+		"Force Enable Move Tile Entities" = false
+		"Enable Dispenser Behavior" = true
+		#This feature disables itself if any of the following mods are loaded:
+		# - supplementaries
+		#This is done to prevent content overlap.
+		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
+		"Ignore Anti Overlap" = false
+
+	[building.thatch]
+		#Allowed values: [0,1]
+		"Fall Damage Multiplier" = 0.5
+		#This feature disables itself if any of the following mods are loaded:
+		# - goated
+		# - environmental
+		#This is done to prevent content overlap.
+		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
+		"Ignore Anti Overlap" = false
+
+	[building.variant_bookshelves]
+		"Change Names" = true
+		#This feature disables itself if any of the following mods are loaded:
+		# - woodworks
+		# - woodster
+		#This is done to prevent content overlap.
+		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
+		"Ignore Anti Overlap" = false
+
+	[building.variant_chests]
+		"Enable Reverting Wooden Chests" = true
+		"Replace Worldgen Chests" = true
+		#Chests to put in structures. It's preferred to use worldgen tags for this. The format per entry is "structure=chest", where "structure" is a structure ID, and "chest" is a block ID, which must correspond to a standard chest block.
+		"Structure Chests" = []
+		#This feature disables itself if any of the following mods are loaded:
+		# - woodworks
+		#This is done to prevent content overlap.
+		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
+		"Ignore Anti Overlap" = false
+
+	[building.variant_ladders]
+		"Change Names" = true
+		#This feature disables itself if any of the following mods are loaded:
+		# - woodworks
+		# - woodster
+		#This is done to prevent content overlap.
+		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
+		"Ignore Anti Overlap" = false
+
+	[building.vertical_slabs]
+		#Should Walls and Panes attempt to connect to the side of Vertical Slabs?
+		"Allow Side Connections" = true
+
+	[building.more_stone_variants]
+		"Enable Bricks" = true
+		"Enable Chiseled Bricks" = true
+		"Enable Pillar" = true
+
+[management]
+	"Automatic Tool Restock" = true
+	"Easy Transfering" = true
+	"Expanded Item Interactions" = true
+	"Hotbar Changer" = true
+	"Inventory Sorting" = true
+	"Item Sharing" = true
+	"Quick Armor Swapping" = true
+
+	[management.automatic_tool_restock]
+		#Enchantments deemed important enough to have special priority when finding a replacement
+		"Important Enchantments" = ["minecraft:silk_touch", "minecraft:fortune", "minecraft:infinity", "minecraft:luck_of_the_sea", "minecraft:looting"]
+		#Enable replacing your tools with tools of the same type but not the same item
+		"Enable Loose Matching" = true
+		#Enable comparing enchantments to find a replacement
+		"Enable Enchant Matching" = true
+		#Allow pulling items from one hotbar slot to another
+		"Check Hotbar" = false
+		"Unstackables Only" = false
+		#Any items you place in this list will be ignored by the restock feature
+		"Ignored Items" = ["botania:exchange_rod", "botania:dirt_rod", "botania:skydirt_rod", "botania:cobble_rod"]
+		#This feature disables itself if any of the following mods are loaded:
+		# - inventorytweaks
+		#This is done to prevent content overlap.
+		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
+		"Ignore Anti Overlap" = false
+
+	[management.easy_transfering]
+		"Enable Shift Lock" = true
+
+	[management.expanded_item_interactions]
+		"Enable Armor Interaction" = true
+		"Enable Shulker Box Interaction" = true
+		"Enable Lava Interaction" = true
+		"Allow Opening Shulker Boxes" = true
+		"Allow Rotating Bundles" = true
+
+	[management.inventory_sorting]
+		"Enable Player Inventory" = true
+		"Enable Player Inventory In Chests" = true
+		"Enable Chests" = true
+		#Play a click when sorting inventories using keybindings
+		"Satisfying Click" = true
+
+	[management.item_sharing]
+		#In ticks.
+		#Allowed values: [0,)
+		Cooldown = 100
+		"Render Items In Chat" = true
+
+	[management.quick_armor_swapping]
+		"Swap Off Hand" = true
+
+	[management.hotbar_changer]
+		"Animation Time" = 7.0
+
+[tools]
+	Abacus = true
+	"Ambient Discs" = true
+	"Ancient Tomes" = true
+	"Beacon Redirection" = true
+	"Bottled Cloud" = true
+	"Color Runes" = true
+	"Endermosh Music Disc" = true
+	"Parrot Eggs" = true
+	"Pathfinder Maps" = true
+	Pickarang = true
+	"Seed Pouch" = true
+	"Skull Pikes" = true
+	"Slime In A Bucket" = true
+	"Torch Arrow" = true
+	Trowel = true
+
+	[tools.abacus]
+
+		[tools.abacus.highlight_color]
+			A = 0.4
+			R = 0.0
+			G = 0.0
+			B = 0.0
+
+	[tools.ambient_discs]
+		"Drop On Spider Kill" = true
+		Volume = 3.0
+
+	[tools.ancient_tomes]
+		#Format is lootTable,weight. i.e. "minecraft:chests/stronghold_library,30"
+		"Loot Tables" = ["minecraft:chests/stronghold_library,20", "minecraft:chests/simple_dungeon,20", "minecraft:chests/bastion_treasure,25", "minecraft:chests/woodland_mansion,15", "minecraft:chests/nether_bridge,0", "minecraft:chests/underwater_ruin_big,0", "minecraft:chests/underwater_ruin_small,0", "minecraft:chests/ancient_city,4", "quark:misc/monster_box,5"]
+		"Item Quality" = 2
+		"Normal Upgrade Cost" = 10
+		"Limit Break Upgrade Cost" = 30
+		"Valid Enchantments" = ["minecraft:feather_falling", "minecraft:thorns", "minecraft:sharpness", "minecraft:smite", "minecraft:bane_of_arthropods", "minecraft:knockback", "minecraft:fire_aspect", "minecraft:looting", "minecraft:sweeping", "minecraft:efficiency", "minecraft:unbreaking", "minecraft:fortune", "minecraft:power", "minecraft:punch", "minecraft:luck_of_the_sea", "minecraft:lure", "minecraft:loyalty", "minecraft:riptide", "minecraft:impaling", "minecraft:piercing"]
+		"Overleveled Books Glow Rainbow" = true
+		#When enabled, Efficiency VI Diamond and Netherite pickaxes can instamine Deepslate when under Haste 2
+		"Deepslate Tweak" = true
+		"Deepslate Tweak Needs Haste2" = true
+		#Master Librarians will offer to exchange Ancient Tomes, provided you give them a max-level Enchanted Book of the Tome's enchantment too.
+		"Librarians Exchange Ancient Tomes" = true
+		#Applying a tome will also randomly curse your item
+		"Curse Gear" = false
+		#Allows combining tomes with normal books
+		"Combine With Books" = true
+		#Whether a sanity check is performed on the valid enchantments. If this is turned off, enchantments such as Silk Touch will be allowed to generate Ancient Tomes, if explicitly added to the Valid Enchantments.
+		"Sanity Check" = true
+
+	[tools.beacon_redirection]
+		"Horizontal Move Limit" = 64
+		"Allow Tinted Glass Transparency" = true
+
+	[tools.bottled_cloud]
+		"Cloud Level Bottom" = 191
+		"Cloud Level Top" = 196
+
+	[tools.color_runes]
+		"Dungeon Weight" = 10
+		"Nether Fortress Weight" = 8
+		"Jungle Temple Weight" = 8
+		"Desert Temple Weight" = 8
+		"Item Quality" = 0
+
+	[tools.endermosh_music_disc]
+		"Play Endermosh During Enderdragon Fight" = false
+		"Add To End City Loot" = true
+		"Loot Weight" = 5
+		"Loot Quality" = 1
+
+	[tools.parrot_eggs]
+		#The chance feeding a parrot will produce an egg
+		Chance = 0.05
+		#How long it takes to create an egg
+		"Egg Time" = 12000
+		"Enable Special Awesome Parrot" = true
+
+	[tools.pathfinder_maps]
+		#In this section you can add custom Pathfinder Maps. This works for both vanilla and modded biomes.
+		#Each custom map must be on its own line.
+		#The format for a custom map is as follows:
+		#<id>,<level>,<min_price>,<max_price>,<color>,<name>
+		#With the following descriptions:
+		# - <id> being the biome's ID NAME. You can find vanilla names here - https://minecraft.wiki/w/Biome#Biome_IDs
+		# - <level> being the Cartographer villager level required for the map to be unlockable
+		# - <min_price> being the cheapest (in Emeralds) the map can be
+		# - <max_price> being the most expensive (in Emeralds) the map can be
+		# - <color> being a hex color (without the #) for the map to display. You can generate one here - https://htmlcolorcodes.com/
+		#Here's an example of a map to locate Ice Mountains:
+		#minecraft:ice_mountains,2,8,14,7FE4FF
+		Customs = []
+		#Set to false to make it so the default quark Pathfinder Map Built-In don't get added, and only the custom ones do
+		"Apply Default Trades" = true
+		#How many steps in the search should the Pathfinder's Quill do per tick? The higher this value, the faster it'll find a result, but the higher chance it'll lag the game while doing so
+		"Pathfinders Quill Speed" = 32
+		#Experimental. Determines if quills should be multithreaded instead. Will ignore quill speed. This could drastically improve performance as it execute the logic off the main thread ideally causing no lag at all
+		"Multi Threaded" = true
+		#Allows retrying after a pathfinder quill fails to find a biome nearby. Turn off if you think its op
+		"Allow Retrying" = true
+		"Search Radius" = 6400
+		"Xp From Trade" = 5
+		"Add To Cartographer" = true
+		"Add To Wandering Trader Forced" = true
+		"Add To Wandering Trader Generic" = false
+		"Add To Wandering Trader Rare" = false
+		"Draw Hud" = true
+		"Hud On Top" = false
+
+	[tools.pickarang]
+		"Enable Flamerang" = true
+		#Set this to true to use the recipe without the Heart of Diamond, even if the Heart of Diamond is enabled.
+		"Never Use Heart Of Diamond" = false
+
+		[tools.pickarang.pickarang]
+			#How long it takes before the Pickarang starts returning to the player if it doesn't hit anything.
+			Timeout = 20
+			#Pickarang harvest level. 2 is Iron, 3 is Diamond, 4 is Netherite.
+			"Harvest Level" = 3
+			#Pickarang durability. Set to -1 to have the Pickarang be unbreakable.
+			Durability = 800
+			#Pickarang max hardness breakable. 22.5 is ender chests, 25.0 is monster boxes, 50 is obsidian. Most things are below 5.
+			"Max Hardness" = 20.0
+			#How much damage the Pickarang deals when swung as an item
+			"Attack Damage" = 2
+			#How many ticks do you have to wait between using the pickarang again
+			Cooldown = 10
+			#Whether this pickarang type can act as a hoe.
+			"Can Act As Hoe" = false
+			#Whether this pickarang type can act as a shovel.
+			"Can Act As Shovel" = true
+			#Whether this pickarang type can act as an axe.
+			"Can Act As Axe" = true
+
+		[tools.pickarang.flamerang]
+			#How long it takes before the Pickarang starts returning to the player if it doesn't hit anything.
+			Timeout = 20
+			#Pickarang harvest level. 2 is Iron, 3 is Diamond, 4 is Netherite.
+			"Harvest Level" = 4
+			#Pickarang durability. Set to -1 to have the Pickarang be unbreakable.
+			Durability = 1040
+			#Pickarang max hardness breakable. 22.5 is ender chests, 25.0 is monster boxes, 50 is obsidian. Most things are below 5.
+			"Max Hardness" = 20.0
+			#How much damage the Pickarang deals when swung as an item
+			"Attack Damage" = 3
+			#How many ticks do you have to wait between using the pickarang again
+			Cooldown = 10
+			#Whether this pickarang type can act as a hoe.
+			"Can Act As Hoe" = false
+			#Whether this pickarang type can act as a shovel.
+			"Can Act As Shovel" = true
+			#Whether this pickarang type can act as an axe.
+			"Can Act As Axe" = true
+
+	[tools.seed_pouch]
+		"Max Items" = 640
+		"Show All Variants In Creative" = true
+		"Shift Range" = 3
+		#Allow putting bone meal into the Seed Pouch (or anything else in the tag 'quark:seed_pouch_fertilizers')
+		"Allow Fertilizer" = true
+		"Fertilizer Shift Range" = 3
+
+	[tools.skull_pikes]
+		"Pike Range" = 5.0
+
+	[tools.torch_arrow]
+		"Extinguish On Miss" = false
+
+	[tools.trowel]
+		#Amount of blocks placed is this value + 1.
+		#Set to 0 to make the Trowel unbreakable
+		#Allowed values: [0,)
+		"Trowel Max Durability" = 0
+
+[tweaks]
+	"Armed Armor Stands" = true
+	"Automatic Recipe Unlock" = true
+	"Better Elytra Rocket" = true
+	"Campfires Boost Elytra" = true
+	"Compasses Work Everywhere" = true
+	"Coral On Cactus" = true
+	"Diamond Repair" = true
+	"Double Door Opening" = true
+	"Dragon Scales" = true
+	"Dyeable Item Frames" = true
+	Emotes = true
+	"Enhanced Ladders" = true
+	"Glass Shard" = true
+	"Gold Tools Have Fortune" = true
+	"Grab Chickens" = true
+	"Hoe Harvesting" = true
+	"Horses Swim" = true
+	"Improved Sponges" = true
+	"Lock Rotation" = true
+	"Magma Keeps Concrete Powder" = true
+	"Map Washing" = true
+	"More Banner Layers" = true
+	"More Note Block Sounds" = true
+	"More Villagers" = true
+	"No Durability On Cosmetics" = true
+	"Pat The Dogs" = true
+	"Petals On Water" = true
+	"Pig Litters" = true
+	"Poison Potato Usage" = true
+	"Reacharound Placing" = true
+	"Renewable Spore Blossoms" = true
+	"Replace Scaffolding" = true
+	"Safer Creatures" = true
+	"Shulker Packing" = true
+	"Simple Harvest" = true
+	"Slabs To Blocks" = true
+	"Slimes To Magma Cubes" = true
+	"Snow Golem Player Heads" = true
+	"Utility Recipes" = true
+	"Vexes Die With Their Masters" = true
+	"Villagers Follow Emeralds" = true
+	"Zombie Villagers On Normal" = true
+
+	[tweaks.automatic_recipe_unlock]
+		#A list of recipe names that should NOT be added in by default
+		"Ignored Recipes" = []
+		"Force Limited Crafting" = false
+		"Disable Recipe Book" = false
+		#If enabled, advancements granting recipes will be stopped from loading, potentially reducing the lagspike on first world join.
+		"Filter Recipe Advancements" = true
+		#This feature disables itself if any of the following mods are loaded:
+		# - nerb
+		#This is done to prevent content overlap.
+		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
+		"Ignore Anti Overlap" = false
+
+	[tweaks.campfires_boost_elytra]
+		"Boost Strength" = 0.5
+		"Max Speed" = 1.0
+
+	[tweaks.compasses_work_everywhere]
+		"Enable Compass Nerf" = true
+		"Enable Clock Nerf" = true
+		"Enable Nether" = true
+		"Enable End" = true
+
+	[tweaks.diamond_repair]
+		#List of changes to apply to repair items, format is "<item>=<repair_item>" as seen in the defualt.
+		#Multiple repair items can be applied for the same base item, and as long as at least one is provided, any vanilla option will be removed.
+		#To use multiple items, comma separate them (e.g. "minecraft:diamond_sword=minecraft:diamond,minecraft:emerald")If you want the vanilla option back, you must add it again manually.
+		"Repair Item Changes" = ["minecraft:netherite_sword=minecraft:diamond", "minecraft:netherite_pickaxe=minecraft:diamond", "minecraft:netherite_axe=minecraft:diamond", "minecraft:netherite_shovel=minecraft:diamond", "minecraft:netherite_hoe=minecraft:diamond", "minecraft:netherite_helmet=minecraft:diamond", "minecraft:netherite_chestplate=minecraft:diamond", "minecraft:netherite_leggings=minecraft:diamond", "minecraft:netherite_boots=minecraft:diamond"]
+		"Unrepairable Items" = []
+		"Enable Jei Hints" = true
+
+	[tweaks.double_door_opening]
+		"Enable Doors" = true
+		"Enable Fence Gates" = true
+		#This feature disables itself if any of the following mods are loaded:
+		# - utilitix
+		#This is done to prevent content overlap.
+		#You can turn this on

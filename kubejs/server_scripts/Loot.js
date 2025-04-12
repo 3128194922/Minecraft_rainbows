@@ -361,7 +361,7 @@ ServerEvents.genericLootTables(event => {
     })
     event.addGeneric('minecraft:gameplay/hero_of_the_village/toolsmith_gift', loot => {
         loot.addPool(pool => {
-            pool.addItem(Item.of('smc:swiss_army_knife', "{Damage:0,RepairCost:1,SMCSwissKnife:0,SMCSwissKnifeOld:0,display:{Name:'{\"text\":\"瑞士军刀(不朽)\",\"color\":\"red\"}'}}").enchant('smc:adaption', 1))
+            pool.addItem('rainbow:slime_rod')
         })
     })
 })
@@ -379,10 +379,39 @@ ServerEvents.entityLootTables(event=>{
             pool.addItem('minecraft:emerald').weight(1).count([1,2]).lootingEnchant(1,5)
         })
     })
+    //卫道不祥瓶子
+    event.modifyEntity('minecraft:vindicator',Loot=>{
+        Loot.addPool(pool=>{
+            pool.addItem('rainbow:pobo')
+            .weight(1) // 基础掉落权重
+            .count([0, 1]) // 基础掉落数量范围
+        })
+    })
     //蟑螂710元素
     event.modifyEntity('alexsmobs:cockroach',Loot=>{
         Loot.addPool(pool=>{
             pool.addItem('rainbow:shit')
+            .weight(1) // 基础掉落权重
+            .count([0, 1]) // 基础掉落数量范围
+            .lootingEnchant(1,5)
+        })
+    })
+    //机器人掉材料
+    event.modifyEntity('infinitygolem:infinity_golem',Loot=>{
+        Loot.addPool(pool=>{
+            pool.addItem(Item.of('tacz:ammo', '{AmmoId:"cyber_armorer:material_1"}'))
+            .weight(4) // 基础掉落权重
+            .count([0, 10]) // 基础掉落数量范围
+            .lootingEnchant(1,5)
+            pool.addItem(Item.of('tacz:ammo', '{AmmoId:"cyber_armorer:material_2"}'))
+            .weight(3) // 基础掉落权重
+            .count([0, 5]) // 基础掉落数量范围
+            .lootingEnchant(1,5)
+            pool.addItem(Item.of('tacz:ammo', '{AmmoId:"cyber_armorer:material_3"}'))
+            .weight(2) // 基础掉落权重
+            .count([0, 2]) // 基础掉落数量范围
+            .lootingEnchant(1,5)
+            pool.addItem(Item.of('tacz:ammo', '{AmmoId:"cyber_armorer:material_4"}'))
             .weight(1) // 基础掉落权重
             .count([0, 1]) // 基础掉落数量范围
             .lootingEnchant(1,5)

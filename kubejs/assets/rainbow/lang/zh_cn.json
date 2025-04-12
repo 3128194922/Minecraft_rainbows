@@ -30,5 +30,13 @@
 	"effect.rainbow.democratic_save": "民主庇佑",
 	"effect.rainbow.democratic_save.description": "效果期间免疫绝大部分伤害，For SuperEarth！",
 	"item.rainbow.tengzou_noodles":"§6滕州大肉面条",
-	"item.rainbow.glass_sword":"玻璃刀"
+	"item.rainbow.glass_sword":"玻璃刀",
+	"item.rainbow.slime_rod":"黏液工具棒",
+	"item.rainbow.tyring":"提尔锋",
+	"item.rainbow.heavy_axe":"重锤",
+	"item.minecraft.potion.effect.omen":"不祥之瓶",
+	"item.minecraft.splash_potion.effect.omen":"投掷型不祥之瓶",
+	"item.minecraft.lingering_potion.effect.omen":"滞留型不祥之瓶",
+	"item.minecraft.tipped_arrow.effect.omen":"不祥之箭",
+	"item.rainbow.diamond_arrow":"钻石箭"
 }

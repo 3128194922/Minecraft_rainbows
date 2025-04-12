@@ -116,7 +116,7 @@
 	"Gold Bars" = true
 	Grate = true
 	Hedges = true
-	"Hollow Logs" = false
+	"Hollow Logs" = true
 	"Industrial Palette" = true
 	"Japanese Palette" = true
 	"Leaf Carpet" = true
@@ -318,6 +318,9 @@
 		"Allow Opening Shulker Boxes" = true
 		"Allow Rotating Bundles" = true
 
+	[management.hotbar_changer]
+		"Animation Time" = 7.0
+
 	[management.inventory_sorting]
 		"Enable Player Inventory" = true
 		"Enable Player Inventory In Chests" = true
@@ -333,9 +336,6 @@
 
 	[management.quick_armor_swapping]
 		"Swap Off Hand" = true
-
-	[management.hotbar_changer]
-		"Animation Time" = 7.0
 
 [tools]
 	Abacus = true
@@ -1131,7 +1131,7 @@
 		#Percentage of fallen logs spawning as hollow. Requires Hollow Logs Module to be enabled
 		"Hollow Chance" = 0.7
 		Rarity = 5
-		#chance for logs to spawn on water
+		#Chance for logs to spawn on water
 		"On Water Chance" = 0.1
 		"Sparse Biome Rarity" = 12
 		#Tags that define which biomes can have which wood types
@@ -1593,7 +1593,7 @@
 	[client.greener_grass]
 		"Affect Leaves" = true
 		"Affect Water" = false
-		"Block List" = ["minecraft:large_fern", "minecraft:tall_grass", "minecraft:grass_block", "minecraft:fern", "minecraft:grass", "minecraft:potted_fern", "minecraft:sugar_cane", "environmental:giant_tall_grass", "valhelsia_structures:grass_block"]
+		"Block List" = ["minecraft:large_fern", "minecraft:tall_grass", "minecraft:grass_block", "minecraft:fern", "minecraft:grass", "minecraft:potted_fern", "minecraft:sugar_cane", "environmental:giant_tall_grass", "grassslabs:grass_carpet", "grassslabs:grass_slab", "grassslabs:grass_stairs", "valhelsia_structures:grass_block"]
 		"Leaves List" = ["minecraft:spruce_leaves", "minecraft:birch_leaves", "minecraft:oak_leaves", "minecraft:jungle_leaves", "minecraft:acacia_leaves", "minecraft:dark_oak_leaves", "atmospheric:rosewood_leaves", "atmospheric:morado_leaves", "atmospheric:yucca_leaves", "autumnity:maple_leaves", "environmental:willow_leaves", "environmental:hanging_willow_leaves", "minecraft:vine"]
 
 		[client.greener_grass.color_matrix]
@@ -1609,7 +1609,7 @@
 	[client.improved_tooltips]
 		"Attribute Tooltips" = true
 		"Food Tooltips" = true
-		"Shulker Tooltips" = false
+		"Shulker Tooltips" = true
 		"Map Tooltips" = true
 		"Enchanting Tooltips" = true
 		"Fuel Time Tooltips" = true
@@ -1889,8 +1889,12 @@
 		"Allow Books" = true
 		#Set this to true to allow treasure enchantments to be rolled as pieces
 		"Allow Treasures" = false
+		#Set this to true to allow undiscoverable enchantments to be rolled as pieces
+		"Allow Undiscoverable Enchantments" = false
 		#Any treasure enchantment IDs here will be able to appear in books in matrix enchanting
 		"Treasure Whitelist" = []
+		#Any undiscoverable enchantment IDs here will be able to appear in matrix enchanting
+		"Undiscoverable Whitelist" = []
 		#Set to false to disable the tooltip for items with pending enchantments
 		"Show Tooltip" = true
 		#By default, enchantment rarities are fuzzed a bit to feel better with the new system. Set this to false to override this behaviour.
